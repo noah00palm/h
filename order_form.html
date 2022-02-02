@@ -1,0 +1,11 @@
+<!-- accounts/templates/accounts/order_form.html -->
+{% extends 'accounts/base.html' %}
+{% load static %}
+
+{% block content %}
+<form method="post">
+    {% csrf_token %}
+    {{form}}
+    <input type="submit" value="Submit">
+</form>
+{% endblock %}
