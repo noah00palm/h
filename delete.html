@@ -1,0 +1,13 @@
+<!-- accounts/templates/accounts/delete.html -->
+{% extends 'accounts/base.html' %}
+
+{% block content %}
+
+<p>Are you sure want to delete "{{item}}"?</p>
+
+<form method="post">
+    {% csrf_token %}
+    <a href="{% url 'home' %}">Cancel</a>
+    <input type="submit" value="Confirm">
+</form>
+{% endblock content %}
