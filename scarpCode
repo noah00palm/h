@@ -1,0 +1,19 @@
+print('Hello user...')
+name = input('What\'s your name? ')
+name = name.title()
+age = input('How old are you? ')
+print(f'Your name is {name} and your are {age} years old!')
+
+# Working with dictionaries inside list
+name_list = []
+name_dict = {'name': name, 'age': age}
+name_list.append(name_dict)
+
+# Display values
+print(name_list)
+
+# Display value inside a dict
+x = name_list[0]
+y = x['name']
+print(y)
+
